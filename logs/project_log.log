@@ -1,29 +1,188 @@
-2025-09-06 20:36:23 | INFO | Kafka topic: music_performance
-2025-09-06 20:36:23 | INFO | Message interval: 2 seconds
-2025-09-06 20:36:23 | INFO | Kafka broker address: localhost:9092
-2025-09-06 20:36:23 | INFO | Connecting to Kafka broker at localhost:9092...
-2025-09-06 20:36:24 | INFO | Kafka producer successfully created.
-2025-09-06 20:36:24 | INFO | Kafka broker address: localhost:9092
-2025-09-06 20:36:24 | INFO | Creating 'music_performance'.
-2025-09-06 20:36:24 | INFO | Topic 'music_performance' created successfully.
-2025-09-06 20:36:24 | INFO | Kafka topic 'music_performance' is ready.
-2025-09-06 20:36:24 | INFO | Starting message production to topic 'music_performance'...
-2025-09-06 20:36:24 | INFO | Currently Performing: Prince:Purple Rain.
-2025-09-06 20:36:24 | INFO | Sent message to topic 'music_performance': Prince:Purple Rain.
-2025-09-06 20:36:26 | INFO | Currently Performing: Michael Jackson:Thriller.
-2025-09-06 20:36:26 | INFO | Sent message to topic 'music_performance': Michael Jackson:Thriller.
-2025-09-06 20:36:28 | INFO | Currently Performing: Ed Sheeran: Shape of You.
-2025-09-06 20:36:28 | INFO | Sent message to topic 'music_performance': Ed Sheeran: Shape of You.
-2025-09-06 20:36:30 | INFO | Currently Performing: Bing Crosby:Silent Night.
-2025-09-06 20:36:30 | INFO | Sent message to topic 'music_performance': Bing Crosby:Silent Night.
-2025-09-06 20:36:32 | INFO | Currently Performing: The Beatles: Hey Jude.
-2025-09-06 20:36:32 | INFO | Sent message to topic 'music_performance': The Beatles: Hey Jude.
-2025-09-06 20:36:34 | INFO | Currently Performing: Prince:Purple Rain.
-2025-09-06 20:36:34 | INFO | Sent message to topic 'music_performance': Prince:Purple Rain.
-2025-09-06 20:36:36 | INFO | Currently Performing: Michael Jackson:Thriller.
-2025-09-06 20:36:36 | INFO | Sent message to topic 'music_performance': Michael Jackson:Thriller.
-2025-09-06 20:36:38 | INFO | Currently Performing: Ed Sheeran: Shape of You.
-2025-09-06 20:36:38 | INFO | Sent message to topic 'music_performance': Ed Sheeran: Shape of You.
-2025-09-06 20:36:40 | WARNING | Producer interrupted by user.
-2025-09-06 20:36:40 | INFO | Kafka producer closed.
-2025-09-06 20:36:40 | INFO | END producer.
+2025-09-07 17:44:42 | INFO | Currently Performing: Michael Jackson:Thriller.
+2025-09-07 17:44:42 | INFO | Sent message to topic 'music_performance': Michael Jackson:Thriller.
+2025-09-07 17:44:42 | INFO | Processing message: Michael Jackson:Thriller.
+2025-09-07 17:44:42 | INFO | Message word count: 2
+2025-09-07 17:44:44 | INFO | Currently Performing: Ed Sheeran: Shape of You.
+2025-09-07 17:44:44 | INFO | Sent message to topic 'music_performance': Ed Sheeran: Shape of You.
+2025-09-07 17:44:44 | INFO | Processing message: Ed Sheeran: Shape of You.
+2025-09-07 17:44:44 | INFO | Message word count: 5
+2025-09-07 17:44:46 | INFO | Currently Performing: Bing Crosby:Silent Night.
+2025-09-07 17:44:46 | INFO | Sent message to topic 'music_performance': Bing Crosby:Silent Night.
+2025-09-07 17:44:46 | INFO | Processing message: Bing Crosby:Silent Night.
+2025-09-07 17:44:46 | INFO | Message word count: 3
+2025-09-07 17:44:48 | INFO | Currently Performing: The Beatles: Hey Jude.
+2025-09-07 17:44:48 | INFO | Sent message to topic 'music_performance': The Beatles: Hey Jude.
+2025-09-07 17:44:48 | INFO | Processing message: The Beatles: Hey Jude.
+2025-09-07 17:44:48 | INFO | Message word count: 4
+2025-09-07 17:44:50 | INFO | Currently Performing: Prince:Purple Rain.
+2025-09-07 17:44:50 | INFO | Sent message to topic 'music_performance': Prince:Purple Rain.
+2025-09-07 17:44:50 | INFO | Processing message: Prince:Purple Rain.
+2025-09-07 17:44:50 | INFO | Message word count: 2
+2025-09-07 17:44:52 | INFO | Currently Performing: Michael Jackson:Thriller.
+2025-09-07 17:44:52 | INFO | Sent message to topic 'music_performance': Michael Jackson:Thriller.
+2025-09-07 17:44:52 | INFO | Processing message: Michael Jackson:Thriller.
+2025-09-07 17:44:52 | INFO | Message word count: 2
+2025-09-07 17:44:54 | INFO | Currently Performing: Ed Sheeran: Shape of You.
+2025-09-07 17:44:54 | INFO | Sent message to topic 'music_performance': Ed Sheeran: Shape of You.
+2025-09-07 17:44:54 | INFO | Processing message: Ed Sheeran: Shape of You.
+2025-09-07 17:44:54 | INFO | Message word count: 5
+2025-09-07 17:44:56 | INFO | Currently Performing: Bing Crosby:Silent Night.
+2025-09-07 17:44:56 | INFO | Sent message to topic 'music_performance': Bing Crosby:Silent Night.
+2025-09-07 17:44:56 | INFO | Processing message: Bing Crosby:Silent Night.
+2025-09-07 17:44:56 | INFO | Message word count: 3
+2025-09-07 17:44:58 | INFO | Currently Performing: The Beatles: Hey Jude.
+2025-09-07 17:44:58 | INFO | Sent message to topic 'music_performance': The Beatles: Hey Jude.
+2025-09-07 17:44:58 | INFO | Processing message: The Beatles: Hey Jude.
+2025-09-07 17:44:58 | INFO | Message word count: 4
+2025-09-07 17:45:00 | INFO | Currently Performing: Prince:Purple Rain.
+2025-09-07 17:45:00 | INFO | Sent message to topic 'music_performance': Prince:Purple Rain.
+2025-09-07 17:45:00 | INFO | Processing message: Prince:Purple Rain.
+2025-09-07 17:45:00 | INFO | Message word count: 2
+2025-09-07 17:45:02 | INFO | Currently Performing: Michael Jackson:Thriller.
+2025-09-07 17:45:02 | INFO | Sent message to topic 'music_performance': Michael Jackson:Thriller.
+2025-09-07 17:45:02 | INFO | Processing message: Michael Jackson:Thriller.
+2025-09-07 17:45:02 | INFO | Message word count: 2
+2025-09-07 17:45:04 | INFO | Currently Performing: Ed Sheeran: Shape of You.
+2025-09-07 17:45:04 | INFO | Sent message to topic 'music_performance': Ed Sheeran: Shape of You.
+2025-09-07 17:45:04 | INFO | Processing message: Ed Sheeran: Shape of You.
+2025-09-07 17:45:04 | INFO | Message word count: 5
+2025-09-07 17:45:06 | INFO | Currently Performing: Bing Crosby:Silent Night.
+2025-09-07 17:45:06 | INFO | Sent message to topic 'music_performance': Bing Crosby:Silent Night.
+2025-09-07 17:45:06 | INFO | Processing message: Bing Crosby:Silent Night.
+2025-09-07 17:45:06 | INFO | Message word count: 3
+2025-09-07 17:45:08 | INFO | Currently Performing: The Beatles: Hey Jude.
+2025-09-07 17:45:08 | INFO | Sent message to topic 'music_performance': The Beatles: Hey Jude.
+2025-09-07 17:45:08 | INFO | Processing message: The Beatles: Hey Jude.
+2025-09-07 17:45:08 | INFO | Message word count: 4
+2025-09-07 17:45:10 | INFO | Currently Performing: Prince:Purple Rain.
+2025-09-07 17:45:10 | INFO | Sent message to topic 'music_performance': Prince:Purple Rain.
+2025-09-07 17:45:10 | INFO | Processing message: Prince:Purple Rain.
+2025-09-07 17:45:10 | INFO | Message word count: 2
+2025-09-07 17:45:12 | INFO | Currently Performing: Michael Jackson:Thriller.
+2025-09-07 17:45:12 | INFO | Sent message to topic 'music_performance': Michael Jackson:Thriller.
+2025-09-07 17:45:12 | INFO | Processing message: Michael Jackson:Thriller.
+2025-09-07 17:45:12 | INFO | Message word count: 2
+2025-09-07 17:45:14 | INFO | Currently Performing: Ed Sheeran: Shape of You.
+2025-09-07 17:45:14 | INFO | Sent message to topic 'music_performance': Ed Sheeran: Shape of You.
+2025-09-07 17:45:14 | INFO | Processing message: Ed Sheeran: Shape of You.
+2025-09-07 17:45:14 | INFO | Message word count: 5
+2025-09-07 17:45:16 | INFO | Currently Performing: Bing Crosby:Silent Night.
+2025-09-07 17:45:16 | INFO | Sent message to topic 'music_performance': Bing Crosby:Silent Night.
+2025-09-07 17:45:16 | INFO | Processing message: Bing Crosby:Silent Night.
+2025-09-07 17:45:16 | INFO | Message word count: 3
+2025-09-07 17:45:18 | INFO | Currently Performing: The Beatles: Hey Jude.
+2025-09-07 17:45:18 | INFO | Sent message to topic 'music_performance': The Beatles: Hey Jude.
+2025-09-07 17:45:18 | INFO | Processing message: The Beatles: Hey Jude.
+2025-09-07 17:45:18 | INFO | Message word count: 4
+2025-09-07 17:45:20 | INFO | Currently Performing: Prince:Purple Rain.
+2025-09-07 17:45:20 | INFO | Sent message to topic 'music_performance': Prince:Purple Rain.
+2025-09-07 17:45:20 | INFO | Processing message: Prince:Purple Rain.
+2025-09-07 17:45:20 | INFO | Message word count: 2
+2025-09-07 17:45:22 | INFO | Currently Performing: Michael Jackson:Thriller.
+2025-09-07 17:45:22 | INFO | Sent message to topic 'music_performance': Michael Jackson:Thriller.
+2025-09-07 17:45:22 | INFO | Processing message: Michael Jackson:Thriller.
+2025-09-07 17:45:22 | INFO | Message word count: 2
+2025-09-07 17:45:24 | INFO | Currently Performing: Ed Sheeran: Shape of You.
+2025-09-07 17:45:24 | INFO | Sent message to topic 'music_performance': Ed Sheeran: Shape of You.
+2025-09-07 17:45:24 | INFO | Processing message: Ed Sheeran: Shape of You.
+2025-09-07 17:45:24 | INFO | Message word count: 5
+2025-09-07 17:45:26 | INFO | Currently Performing: Bing Crosby:Silent Night.
+2025-09-07 17:45:26 | INFO | Sent message to topic 'music_performance': Bing Crosby:Silent Night.
+2025-09-07 17:45:26 | INFO | Processing message: Bing Crosby:Silent Night.
+2025-09-07 17:45:26 | INFO | Message word count: 3
+2025-09-07 17:45:28 | INFO | Currently Performing: The Beatles: Hey Jude.
+2025-09-07 17:45:28 | INFO | Sent message to topic 'music_performance': The Beatles: Hey Jude.
+2025-09-07 17:45:28 | INFO | Processing message: The Beatles: Hey Jude.
+2025-09-07 17:45:28 | INFO | Message word count: 4
+2025-09-07 17:45:30 | INFO | Currently Performing: Prince:Purple Rain.
+2025-09-07 17:45:30 | INFO | Sent message to topic 'music_performance': Prince:Purple Rain.
+2025-09-07 17:45:30 | INFO | Processing message: Prince:Purple Rain.
+2025-09-07 17:45:30 | INFO | Message word count: 2
+2025-09-07 17:45:32 | INFO | Currently Performing: Michael Jackson:Thriller.
+2025-09-07 17:45:32 | INFO | Sent message to topic 'music_performance': Michael Jackson:Thriller.
+2025-09-07 17:45:32 | INFO | Processing message: Michael Jackson:Thriller.
+2025-09-07 17:45:32 | INFO | Message word count: 2
+2025-09-07 17:45:34 | INFO | Currently Performing: Ed Sheeran: Shape of You.
+2025-09-07 17:45:34 | INFO | Sent message to topic 'music_performance': Ed Sheeran: Shape of You.
+2025-09-07 17:45:34 | INFO | Processing message: Ed Sheeran: Shape of You.
+2025-09-07 17:45:34 | INFO | Message word count: 5
+2025-09-07 17:45:36 | INFO | Currently Performing: Bing Crosby:Silent Night.
+2025-09-07 17:45:36 | INFO | Sent message to topic 'music_performance': Bing Crosby:Silent Night.
+2025-09-07 17:45:36 | INFO | Processing message: Bing Crosby:Silent Night.
+2025-09-07 17:45:36 | INFO | Message word count: 3
+2025-09-07 17:45:38 | INFO | Currently Performing: The Beatles: Hey Jude.
+2025-09-07 17:45:38 | INFO | Sent message to topic 'music_performance': The Beatles: Hey Jude.
+2025-09-07 17:45:38 | INFO | Processing message: The Beatles: Hey Jude.
+2025-09-07 17:45:38 | INFO | Message word count: 4
+2025-09-07 17:45:40 | INFO | Currently Performing: Prince:Purple Rain.
+2025-09-07 17:45:40 | INFO | Sent message to topic 'music_performance': Prince:Purple Rain.
+2025-09-07 17:45:40 | INFO | Processing message: Prince:Purple Rain.
+2025-09-07 17:45:40 | INFO | Message word count: 2
+2025-09-07 17:45:42 | INFO | Currently Performing: Michael Jackson:Thriller.
+2025-09-07 17:45:42 | INFO | Sent message to topic 'music_performance': Michael Jackson:Thriller.
+2025-09-07 17:45:42 | INFO | Processing message: Michael Jackson:Thriller.
+2025-09-07 17:45:42 | INFO | Message word count: 2
+2025-09-07 17:45:44 | INFO | Currently Performing: Ed Sheeran: Shape of You.
+2025-09-07 17:45:44 | INFO | Processing message: Ed Sheeran: Shape of You.
+2025-09-07 17:45:44 | INFO | Sent message to topic 'music_performance': Ed Sheeran: Shape of You.
+2025-09-07 17:45:44 | INFO | Message word count: 5
+2025-09-07 17:45:46 | INFO | Currently Performing: Bing Crosby:Silent Night.
+2025-09-07 17:45:46 | INFO | Sent message to topic 'music_performance': Bing Crosby:Silent Night.
+2025-09-07 17:45:46 | INFO | Processing message: Bing Crosby:Silent Night.
+2025-09-07 17:45:46 | INFO | Message word count: 3
+2025-09-07 17:45:48 | INFO | Currently Performing: The Beatles: Hey Jude.
+2025-09-07 17:45:48 | INFO | Sent message to topic 'music_performance': The Beatles: Hey Jude.
+2025-09-07 17:45:48 | INFO | Processing message: The Beatles: Hey Jude.
+2025-09-07 17:45:48 | INFO | Message word count: 4
+2025-09-07 17:45:50 | INFO | Currently Performing: Prince:Purple Rain.
+2025-09-07 17:45:50 | INFO | Sent message to topic 'music_performance': Prince:Purple Rain.
+2025-09-07 17:45:50 | INFO | Processing message: Prince:Purple Rain.
+2025-09-07 17:45:50 | INFO | Message word count: 2
+2025-09-07 17:45:52 | INFO | Currently Performing: Michael Jackson:Thriller.
+2025-09-07 17:45:52 | INFO | Sent message to topic 'music_performance': Michael Jackson:Thriller.
+2025-09-07 17:45:52 | INFO | Processing message: Michael Jackson:Thriller.
+2025-09-07 17:45:52 | INFO | Message word count: 2
+2025-09-07 17:45:54 | INFO | Currently Performing: Ed Sheeran: Shape of You.
+2025-09-07 17:45:54 | INFO | Sent message to topic 'music_performance': Ed Sheeran: Shape of You.
+2025-09-07 17:45:54 | INFO | Processing message: Ed Sheeran: Shape of You.
+2025-09-07 17:45:54 | INFO | Message word count: 5
+2025-09-07 17:45:56 | INFO | Currently Performing: Bing Crosby:Silent Night.
+2025-09-07 17:45:56 | INFO | Sent message to topic 'music_performance': Bing Crosby:Silent Night.
+2025-09-07 17:45:56 | INFO | Processing message: Bing Crosby:Silent Night.
+2025-09-07 17:45:56 | INFO | Message word count: 3
+2025-09-07 17:45:58 | INFO | Currently Performing: The Beatles: Hey Jude.
+2025-09-07 17:45:58 | INFO | Sent message to topic 'music_performance': The Beatles: Hey Jude.
+2025-09-07 17:45:58 | INFO | Processing message: The Beatles: Hey Jude.
+2025-09-07 17:45:58 | INFO | Message word count: 4
+2025-09-07 17:46:00 | INFO | Currently Performing: Prince:Purple Rain.
+2025-09-07 17:46:00 | INFO | Sent message to topic 'music_performance': Prince:Purple Rain.
+2025-09-07 17:46:00 | INFO | Processing message: Prince:Purple Rain.
+2025-09-07 17:46:00 | INFO | Message word count: 2
+2025-09-07 17:46:02 | INFO | Currently Performing: Michael Jackson:Thriller.
+2025-09-07 17:46:02 | INFO | Sent message to topic 'music_performance': Michael Jackson:Thriller.
+2025-09-07 17:46:02 | INFO | Processing message: Michael Jackson:Thriller.
+2025-09-07 17:46:02 | INFO | Message word count: 2
+2025-09-07 17:46:04 | INFO | Currently Performing: Ed Sheeran: Shape of You.
+2025-09-07 17:46:04 | INFO | Sent message to topic 'music_performance': Ed Sheeran: Shape of You.
+2025-09-07 17:46:04 | INFO | Processing message: Ed Sheeran: Shape of You.
+2025-09-07 17:46:04 | INFO | Message word count: 5
+2025-09-07 17:46:05 | WARNING | Consumer interrupted by user.
+2025-09-07 17:46:05 | INFO | Kafka consumer for topic 'music_performance' closed.
+2025-09-07 17:46:05 | INFO | END consumer for topic 'music_performance' and group '1234'.
+2025-09-07 17:46:06 | INFO | Currently Performing: Bing Crosby:Silent Night.
+2025-09-07 17:46:06 | INFO | Sent message to topic 'music_performance': Bing Crosby:Silent Night.
+2025-09-07 17:46:08 | INFO | Currently Performing: The Beatles: Hey Jude.
+2025-09-07 17:46:08 | INFO | Sent message to topic 'music_performance': The Beatles: Hey Jude.
+2025-09-07 17:46:10 | INFO | Currently Performing: Prince:Purple Rain.
+2025-09-07 17:46:10 | INFO | Sent message to topic 'music_performance': Prince:Purple Rain.
+2025-09-07 17:46:12 | INFO | Currently Performing: Michael Jackson:Thriller.
+2025-09-07 17:46:12 | INFO | Sent message to topic 'music_performance': Michael Jackson:Thriller.
+2025-09-07 17:46:14 | INFO | Currently Performing: Ed Sheeran: Shape of You.
+2025-09-07 17:46:14 | INFO | Sent message to topic 'music_performance': Ed Sheeran: Shape of You.
+2025-09-07 17:46:16 | INFO | Currently Performing: Bing Crosby:Silent Night.
+2025-09-07 17:46:16 | INFO | Sent message to topic 'music_performance': Bing Crosby:Silent Night.
+2025-09-07 17:46:18 | INFO | Currently Performing: The Beatles: Hey Jude.
+2025-09-07 17:46:18 | INFO | Sent message to topic 'music_performance': The Beatles: Hey Jude.
+2025-09-07 17:46:19 | WARNING | Producer interrupted by user.
+2025-09-07 17:46:19 | INFO | Kafka producer closed.
+2025-09-07 17:46:19 | INFO | END producer.

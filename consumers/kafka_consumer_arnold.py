@@ -36,9 +36,10 @@ def get_kafka_topic() -> str:
     return topic
 
 
-def get_kafka_consumer_group_id() -> int:
+def get_kafka_consumer_group_id() -> str:
     """Fetch Kafka consumer group id from environment or use default."""
     group_id: str = os.getenv("KAFKA_CONSUMER_GROUP_ID_JSON", "default_group")
+    # group_id = int(group_id)  # Convert to integer if needed
     logger.info(f"Kafka consumer group id: {group_id}")
     return group_id
 
@@ -52,14 +53,15 @@ def process_message(message: str) -> None:
     """
     Process a single message.
 
-    For now, this function simply logs the message.
-    You can extend it to perform other tasks, like counting words
-    or storing data in a database.
+    For now, this function simply logs the message and counting words.
+    we can extend function to store data in a database.
 
     Args:
         message (str): The message to process.
     """
     logger.info(f"Processing message: {message}")
+    word_count = len(message.split())
+    logger.info(f"Message word count: {word_count}")
 
 
 #####################################
@@ -86,7 +88,7 @@ def main() -> None:
     consumer = create_kafka_consumer(topic, group_id)
 
      # Poll and process messages
-    logger.info(f"Polling messages from topic '{topic}'...")
+    logger.info(f"Pulling messages from topic '{topic}'...")
     try:
         for message in consumer:
             message_str = message.value
