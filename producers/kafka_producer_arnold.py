@@ -1,5 +1,5 @@
 """
-kafka_producer_case.py
+kafka_producer_arnold.py
 
 Produce some streaming buzz strings and send them to a Kafka topic.
 """
@@ -33,14 +33,14 @@ from utils.utils_logger import logger
 
 def get_kafka_topic() -> str:
     """Fetch Kafka topic from environment or use default."""
-    topic = os.getenv("KAFKA_TOPIC", "buzz_topic")
+    topic = os.getenv("KAFKA_TOPIC", "music_performance")
     logger.info(f"Kafka topic: {topic}")
     return topic
 
 
 def get_message_interval() -> int:
     """Fetch message interval from environment or use default."""
-    interval = int(os.getenv("MESSAGE_INTERVAL_SECONDS", 1))
+    interval = int(os.getenv("MESSAGE_INTERVAL_SECONDS", 2))
     logger.info(f"Message interval: {interval} seconds")
     return interval
 
@@ -60,17 +60,17 @@ def generate_messages(producer, topic, interval_secs):
         interval_secs (int): Time in seconds between sending messages.
 
     """
-    string_list: list = [
-        "I love Python!",
-        "Kafka is awesome.",
-        "Streaming data is fun.",
-        "This is a buzz message.",
-        "Have a great day!",
+    vma_performance:list = [
+        "Prince:Purple Rain.",
+        "Michael Jackson:Thriller.",
+        "Ed Sheeran: Shape of You.",
+        "Bing Crosby:Silent Night.",
+        "The Beatles: Hey Jude."
     ]
     try:
         while True:
-            for message in string_list:
-                logger.info(f"Generated buzz: {message}")
+            for message in vma_performance:
+                logger.info(f"Currently Performing: {message}")
                 producer.send(topic, value=message)
                 logger.info(f"Sent message to topic '{topic}': {message}")
                 time.sleep(interval_secs)
