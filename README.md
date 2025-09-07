@@ -1,69 +1,48 @@
-# buzzline-02-case
+# buzzline-02-arnold
 
 Streaming data is often too big for any one machine. Apache Kafka is a popular streaming platform that uses publish-subscribe patterns:
 
 - **Producers** publish streaming data to topics
 - **Consumers** subscribe to topics to process data in real-time
 
-We'll write Python producers and consumers to work with Kafka topics.
 
-Kafka needs space - it's big. 
+## Task 1. Fork project
 
-It also comes from the Linux world. We'll use WSL on Windows machines.
+1. Forked <https://github.com/denisecase/buzzline-02-case> into my GitHub account and created my own version of this project to run and experiment with.
+2. Named my new project `buzzline-02-arnold`.
 
-## Copy This Example Project & Rename
+## Task 2. Start Kafka (using WSL if Windows)
 
-1. Copy/fork this project into your GitHub account and create your own version of this project to run and experiment with.
-2. Name it `buzzline-02-yourname` where yourname is something unique to you.
+In order to use kafka:
+1. Ensure that Windows Subsystem for linux is installed and running.
+2. Ensure Python 3.11 is install within WSL and our python virtual environment.
+3. Ensure that kafka and all its dependencies are installed within WSL.
+4. Ensure VS Code is installed.
 
-## Task 1. Install and Start Kafka (using WSL if Windows)
+start a local Kafka service with WSL using VS Code.
 
-Before starting, ensure you have completed the setup tasks in <https://github.com/denisecase/buzzline-01-case> first.
-Python 3.11 is required.
+1. Start the Kafka server in the foreground
+    ```cd ~/kafka```
+    ```bin/kafka-server-start.sh config/kraft/server.properties```
+2. Keep this terminal open - Kafka will run here
+3. Watch for "started (kafka.server.KafkaServer)" message
 
-In this task, we will download, install, configure, and start a local Kafka service.
 
-1. Install Windows Subsystem for Linux (Windows machines only)
-2. Install Kafka Streaming Platform
-3. Start the Kafka service (leave the terminal open).
-
-For detailed instructions, see:
-
-- [SETUP_KAFKA](SETUP_KAFKA.md)
-
-## Task 2. Manage Local Project Virtual Environment
+## Task 3. Manage Local Project Virtual Environment
 
 Open your project in VS Code and use the commands for your operating system to:
 
 1. Create a Python virtual environment
+    ```python -3.11 -m ven .venv```
 2. Activate the virtual environment
+        ```.venv\Scripts\Activate```
 3. Upgrade pip
+    ```python -m pip install --upgrade pip```
+    ```py -m pip install --upgrade pip wheel setuptools```
 4. Install from requirements.txt
+    ```python -m pip install -r requirements.txt```
 
-### Windows
-
-Open PowerShell terminal in VS Code (Terminal / New Terminal / PowerShell).
-
-```powershell
-py -3.11 -m venv .venv
-.venv\Scripts\Activate.ps1
-py -m pip install --upgrade pip wheel setuptools
-py -m pip install --upgrade -r requirements.txt
-```
-
-If you get execution policy error, run this first:
-`Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
-
-### Mac / Linux
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python3 -m pip install --upgrade pip
-python3 -m pip install --upgrade -r requirements.txt
-```
-
-## Task 3. Start a Kafka Producer
+## Task 4. Start a Kafka Producer
 
 Producers generate streaming data for our topics.
 
@@ -74,17 +53,10 @@ Windows:
 
 ```shell
 .venv\Scripts\activate
-py -m producers.kafka_producer_case
+py -m producers.kafka_producer_arnold
 ```
 
-Mac/Linux:
-
-```zsh
-source .venv/bin/activate
-python3 -m producers.kafka_producer_case
-```
-
-## Task 4. Start a Kafka Consumer
+## Task 5. Start a Kafka Consumer
 
 Consumers process data from topics or logs in real time.
 
@@ -96,13 +68,6 @@ Windows:
 ```shell
 .venv\Scripts\activate
 py -m consumers.kafka_consumer_case
-```
-
-Mac/Linux:
-
-```zsh
-source .venv/bin/activate
-python3 -m consumers.kafka_consumer_case
 ```
 
 ## Later Work Sessions
